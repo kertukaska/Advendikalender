@@ -21,5 +21,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
     calendarContainer.appendChild(calendarDay);
   });
+  body{
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      
+      .calendar {
+        display: grid;
+        grid-template-columns: repeat(4, 100px); /* Muuda veergude arvu vastavalt soovile */
+        gap: 10px;
+      }
+      
+      .calendar div {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      
+      .calendar div:hover {
+        background-color: #ddd;
+      }
+      
+      .calendar img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+      }
 });
 
